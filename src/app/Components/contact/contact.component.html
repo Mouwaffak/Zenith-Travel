@@ -1,0 +1,30 @@
+<div [formGroup]="contactForm" class="entries-section-container">
+  <div class="form-field form-field-block">
+    <label class="text" for="NomField"> Nom:</label>
+    <input type="text" id="NomField" formControlName="nom">
+  </div>
+  <div class="form-field form-field-block">
+    <label class="text" for="mailField"> Mail:</label>
+    <input type="text" id="mailField" formControlName="mail">
+  </div>
+  <div class="form-field form-field-block">
+    <label class="text" for="phoneField"> Phone:</label>
+    <input type="text" id="phoneField" formControlName="phone">
+  </div>
+  <div class="form-field form-field-block">
+    <label class="text" for="countryField"> Country:</label>
+    <input type="text" id="countryField" formControlName="country">
+  </div>
+  <div class="form-field form-field-block">
+    <label class="text" for="subjectField"> Subject:</label>
+    <input type="text" id="subjectField" formControlName="subject">
+  </div>
+  <div class="form-field form-field-block">
+    <label class="text" for="messageField"> Message:</label>
+    <textarea type="text" id="messageField" formControlName="message"></textarea>
+  </div>
+  <div class="form-actions">
+    <button type="button" (click)="onSubmit()" >Submit</button>
+  </div>
+
+</div>
